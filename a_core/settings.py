@@ -41,14 +41,14 @@ if ENVIRONMENT == 'development':
 else:
     DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'deployceleryflowerandbeat-production.up.railway.app']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'celeryflowerbeat.up.railway.app']
 
 INTERNAL_IPS = (
     '127.0.0.1',
     'localhost:8000'
 )
 
-CSRF_TRUSTED_ORIGINS = [ 'https://deployceleryflowerandbeat-production.up.railway.app' ]
+CSRF_TRUSTED_ORIGINS = [ 'https://celeryflowerbeat.up.railway.app/' ]
 
 
 # Application definition
