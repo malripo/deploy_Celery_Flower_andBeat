@@ -41,17 +41,17 @@ if ENVIRONMENT == 'development':
 else:
     DEBUG = False
 
-site_domain = env('RAILWAY_PUNLIC_DOMAIN', default='')
+# site_domain = env('RAILWAY_PUNLIC_DOMAIN', default='')
+# ALLOWED_HOSTS = ['localhost', '127.0.0.1', site_domain]
+# CSRF_TRUSTED_ORIGINS = [ f'https://{site_domain}' ]
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', site_domain]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'celeryflowerbeat.up.railway.app' ]
+CSRF_TRUSTED_ORIGINS = [ 'https://celeryflowerbeat.up.railway.app' ]
 
 INTERNAL_IPS = (
     '127.0.0.1',
     'localhost:8000'
 )
-
-CSRF_TRUSTED_ORIGINS = [ f'https://{site_domain}' ]
-
 
 # Application definition
 
