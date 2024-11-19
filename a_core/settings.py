@@ -48,7 +48,7 @@ INTERNAL_IPS = (
     'localhost:8000'
 )
 
-CSRF_TRUSTED_ORIGINS = [ 'https://celeryflowerbeat.up.railway.app/' ]
+CSRF_TRUSTED_ORIGINS = [ 'https://celeryflowerbeat.up.railway.app' ]
 
 
 # Application definition
